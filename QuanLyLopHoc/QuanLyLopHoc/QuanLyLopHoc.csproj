@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C902DAF-4191-4083-BC58-75074CF78ED5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyLopHoc</RootNamespace>
+    <AssemblyName>QuanLyLopHoc</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Lop.cs" />
+    <Compile Include="BLL\Users.cs" />
+    <Compile Include="DAL\Providers.cs" />
+    <Compile Include="GUI\FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmQuanLyLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmQuanLyLopHoc.Designer.cs">
+      <DependentUpon>FrmQuanLyLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmUngDungQuanLyLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmUngDungQuanLyLopHoc.Designer.cs">
+      <DependentUpon>FrmUngDungQuanLyLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmQuanLyLopHoc.resx">
+      <DependentUpon>FrmQuanLyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmUngDungQuanLyLopHoc.resx">
+      <DependentUpon>FrmUngDungQuanLyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\3d bar chart.ico" />
+    <Content Include="icons\abort.ico" />
+    <Content Include="icons\about.ico" />
+    <Content Include="icons\accounting.ico" />
+    <Content Include="icons\add.ico" />
+    <Content Include="icons\address book.ico" />
+    <Content Include="icons\alarm clock.ico" />
+    <Content Include="icons\alarm.ico" />
+    <Content Include="icons\alert.ico" />
+    <Content Include="icons\alien.ico" />
+    <Content Include="icons\Align_Justify.png" />
+    <Content Include="icons\anchor.ico" />
+    <Content Include="icons\application.ico" />
+    <Content Include="icons\apply.ico" />
+    <Content Include="icons\back.ico" />
+    <Content Include="icons\bad mark.ico" />
+    <Content Include="icons\bee.ico" />
+    <Content Include="icons\black bookmark.ico" />
+    <Content Include="icons\black pin.ico" />
+    <Content Include="icons\black tag.ico" />
+    <Content Include="icons\blog.ico" />
+    <Content Include="icons\blue bookmark.ico" />
+    <Content Include="icons\blue key.ico" />
+    <Content Include="icons\blue pin.ico" />
+    <Content Include="icons\blue tag.ico" />
+    <Content Include="icons\bomb.ico" />
+    <Content Include="icons\bookmark.ico" />
+    <Content Include="icons\boss.ico" />
+    <Content Include="icons\bottom.ico" />
+    <Content Include="icons\briefcase.ico" />
+    <Content Include="icons\brush.ico" />
+    <Content Include="icons\bubble.ico" />
+    <Content Include="icons\buy.ico" />
+    <Content Include="icons\calculator.ico" />
+    <Content Include="icons\calendar.ico" />
+    <Content Include="icons\car key.ico" />
+    <Content Include="icons\CD.ico" />
+    <Content Include="icons\Center.gif" />
+    <Content Include="icons\clipboard.ico" />
+    <Content Include="icons\clock.ico" />
+    <Content Include="icons\close.ico" />
+    <Content Include="icons\coin.ico" />
+    <Content Include="icons\comment.ico" />
+    <Content Include="icons\company.ico" />
+    <Content Include="icons\compass.ico" />
+    <Content Include="icons\component.ico" />
+    <Content Include="icons\computer.ico" />
+    <Content Include="icons\copy.ico" />
+    <Content Include="icons\create.ico" />
+    <Content Include="icons\cut.ico" />
+    <Content Include="icons\danger.ico" />
+    <Content Include="icons\database.ico" />
+    <Content Include="icons\delete.ico" />
+    <Content Include="icons\delivery.ico" />
+    <Content Include="icons\diagram.ico" />
+    <Content Include="icons\dial.ico" />
+    <Content Include="icons\disaster.ico" />
+    <Content Include="icons\display.ico" />
+    <Content Include="icons\dollar.ico" />
+    <Content Include="icons\door.ico" />
+    <Content Include="icons\down.ico" />
+    <Content Include="icons\download.ico" />
+    <Content Include="icons\downloads folder.ico" />
+    <Content Include="icons\e-mail.ico" />
+    <Content Include="icons\earth.ico" />
+    <Content Include="icons\eject.ico" />
+    <Content Include="icons\equipment.ico" />
+    <Content Include="icons\erase.ico" />
+    <Content Include="icons\error.ico" />
+    <Content Include="icons\euro.ico" />
+    <Content Include="icons\exit.ico" />
+    <Content Include="icons\expand.ico" />
+    <Content Include="icons\eye.ico" />
+    <Content Include="icons\fall.ico" />
+    <Content Include="icons\fast-forward.ico" />
+    <Content Include="icons\favourites.ico" />
+    <Content Include="icons\female symbol.ico" />
+    <Content Include="icons\female.ico" />
+    <Content Include="icons\film.ico" />
+    <Content Include="icons\filter.ico" />
+    <Content Include="icons\find.ico" />
+    <Content Include="icons\first record.ico" />
+    <Content Include="icons\first.ico" />
+    <Content Include="icons\flag.ico" />
+    <Content Include="icons\flash drive.ico" />
+    <Content Include="icons\folder.ico" />
+    <Content Include="icons\forbidden.ico" />
+    <Content Include="icons\forward.ico" />
+    <Content Include="icons\free bsd.ico" />
+    <Content Include="icons\gift.ico" />
+    <Content Include="icons\globe.ico" />
+    <Content Include="icons\go back.ico" />
+    <Content Include="icons\go forward.ico" />
+    <Content Include="icons\go.ico" />
+    <Content Include="icons\good mark.ico" />
+    <Content Include="icons\green bookmark.ico" />
+    <Content Include="icons\green pin.ico" />
+    <Content Include="icons\green tag.ico" />
+    <Content Include="icons\hard disk.ico" />
+    <Content Include="icons\heart.ico" />
+    <Content Include="icons\help book 3d.ico" />
+    <Content Include="icons\help book.ico" />
+    <Content Include="icons\help.ico" />
+    <Content Include="icons\help1.ico" />
+    <Content Include="icons\hint.ico" />
+    <Content Include="icons\history.ico" />
+    <Content Include="icons\home.ico" />
+    <Content Include="icons\hourglass.ico" />
+    <Content Include="icons\how-to.ico" />
+    <Content Include="icons\hungup.ico" />
+    <Content Include="icons\In-yang.ico" />
+    <Content Include="icons\info.ico" />
+    <Content Include="icons\Iphone.ico" />
+    <Content Include="icons\Justify.gif" />
+    <Content Include="icons\key.ico" />
+    <Content Include="icons\last recor.ico" />
+    <Content Include="icons\last.ico" />
+    <Content Include="icons\left-right.ico" />
+    <Content Include="icons\Left.gif" />
+    <Content Include="icons\letter.ico" />
+    <Content Include="icons\lightning.ico" />
+    <Content Include="icons\liner.ico" />
+    <Content Include="icons\linux.ico" />
+    <Content Include="icons\list.ico" />
+    <Content Include="icons\load.ico" />
+    <Content Include="icons\lock.ico" />
+    <Content Include="icons\low rating.ico" />
+    <Content Include="icons\magic wand.ico" />
+    <Content Include="icons\mail.ico" />
+    <Content Include="icons\male symbol.ico" />
+    <Content Include="icons\male.ico" />
+    <Content Include="icons\medium rating.ico" />
+    <Content Include="icons\message.ico" />
+    <Content Include="icons\mobile-phone.ico" />
+    <Content Include="icons\modify.ico" />
+    <Content Include="icons\move.ico" />
+    <Content Include="icons\movie.ico" />
+    <Content Include="icons\music.ico" />
+    <Content Include="icons\mute.ico" />
+    <Content Include="icons\network connection.ico" />
+    <Content Include="icons\new document.ico" />
+    <Content Include="icons\new.ico" />
+    <Content Include="icons\next track.ico" />
+    <Content Include="icons\next.ico" />
+    <Content Include="icons\no-entry.ico" />
+    <Content Include="icons\no.ico" />
+    <Content Include="icons\notes.ico" />
+    <Content Include="icons\OK.ico" />
+    <Content Include="icons\Open.ico" />
+    <Content Include="icons\paste.ico" />
+    <Content Include="icons\pause.ico" />
+    <Content Include="icons\people.ico" />
+    <Content Include="icons\percent.ico" />
+    <Content Include="icons\person.ico" />
+    <Content Include="icons\phone number.ico" />
+    <Content Include="icons\phone.ico" />
+    <Content Include="icons\picture.ico" />
+    <Content Include="icons\pie chart.ico" />
+    <Content Include="icons\pinion.ico" />
+    <Content Include="icons\play-music.ico" />
+    <Content Include="icons\play.ico" />
+    <Content Include="icons\playback.ico" />
+    <Content Include="icons\previous record.ico" />
+    <Content Include="icons\previous.ico" />
+    <Content Include="icons\print.ico" />
+    <Content Include="icons\problem.ico" />
+    <Content Include="icons\question.ico" />
+    <Content Include="icons\radiation.ico" />
+    <Content Include="icons\raise.ico" />
+    <Content Include="icons\record.ico" />
+    <Content Include="icons\red bookmark.ico" />
+    <Content Include="icons\red mark.ico" />
+    <Content Include="icons\red pin.ico" />
+    <Content Include="icons\red star.ico" />
+    <Content Include="icons\red tag.ico" />
+    <Content Include="icons\redo.ico" />
+    <Content Include="icons\refresh.ico" />
+    <Content Include="icons\remove.ico" />
+    <Content Include="icons\repair.ico" />
+    <Content Include="icons\report.ico" />
+    <Content Include="icons\retort.ico" />
+    <Content Include="icons\rewind.ico" />
+    <Content Include="icons\Right.gif" />
+    <Content Include="icons\sad.ico" />
+    <Content Include="icons\save.ico" />
+    <Content Include="icons\save_as.ico" />
+    <Content Include="icons\schedule.ico" />
+    <Content Include="icons\script.ico" />
+    <Content Include="icons\search.ico" />
+    <Content Include="icons\shield.ico" />
+    <Content Include="icons\shopping cart.ico" />
+    <Content Include="icons\silence.ico" />
+    <Content Include="icons\smile.ico" />
+    <Content Include="icons\sound.ico" />
+    <Content Include="icons\stock graph.ico" />
+    <Content Include="icons\stop sign.ico" />
+    <Content Include="icons\stop.ico" />
+    <Content Include="icons\stopwatch.ico" />
+    <Content Include="icons\sum.ico" />
+    <Content Include="icons\sync.ico" />
+    <Content Include="icons\table.ico" />
+    <Content Include="icons\target.ico" />
+    <Content Include="icons\taxi.ico" />
+    <Content Include="icons\terminate.ico" />
+    <Content Include="icons\text preview.ico" />
+    <Content Include="icons\text.ico" />
+    <Content Include="icons\thumbs down.ico" />
+    <Content Include="icons\thumbs up.ico" />
+    <Content Include="icons\toolbox.ico" />
+    <Content Include="icons\top.ico" />
+    <Content Include="icons\trackback.ico" />
+    <Content Include="icons\trash.ico" />
+    <Content Include="icons\tune.ico" />
+    <Content Include="icons\turn off.ico" />
+    <Content Include="icons\twitter.ico" />
+    <Content Include="icons\undo.ico" />
+    <Content Include="icons\unlock.ico" />
+    <Content Include="icons\up-down.ico" />
+    <Content Include="icons\up.ico" />
+    <Content Include="icons\update.ico" />
+    <Content Include="icons\upload.ico" />
+    <Content Include="icons\user group.ico" />
+    <Content Include="icons\view.ico" />
+    <Content Include="icons\volume.ico" />
+    <Content Include="icons\wallet.ico" />
+    <Content Include="icons\warning.ico" />
+    <Content Include="icons\Wordpad.ico" />
+    <Content Include="icons\Wordpad2.ico" />
+    <Content Include="icons\wrench.ico" />
+    <Content Include="icons\yellow bookmark.ico" />
+    <Content Include="icons\yellow pin.ico" />
+    <Content Include="icons\yellow tag.ico" />
+    <Content Include="icons\yes.ico" />
+    <Content Include="icons\zoom.ico" />
+    <Content Include="images\image1.jpg" />
+    <Content Include="images\image10.jpg" />
+    <Content Include="images\image11.png" />
+    <Content Include="images\image12.jpg" />
+    <Content Include="images\image13.jpg" />
+    <Content Include="images\image2.jpg" />
+    <Content Include="images\image3.jpg" />
+    <Content Include="images\image4.jpg" />
+    <Content Include="images\image5.jpg" />
+    <Content Include="images\image6.jpg" />
+    <Content Include="images\image7.jpg" />
+    <Content Include="images\image8.jpg" />
+    <Content Include="images\image9.jpg" />
+    <Content Include="images\images14jpg.jpg" />
+    <Content Include="images\Login1.png" />
+    <Content Include="images\Login10.png" />
+    <Content Include="images\Login11.png" />
+    <Content Include="images\Login12.png" />
+    <Content Include="images\Login13.png" />
+    <Content Include="images\Login14.png" />
+    <Content Include="images\Login2.jpg" />
+    <Content Include="images\Login3.jpg" />
+    <Content Include="images\Login4.png" />
+    <Content Include="images\Login5.png" />
+    <Content Include="images\Login6.jpg" />
+    <Content Include="images\Login7.png" />
+    <Content Include="images\Login8.png" />
+    <Content Include="images\Login9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

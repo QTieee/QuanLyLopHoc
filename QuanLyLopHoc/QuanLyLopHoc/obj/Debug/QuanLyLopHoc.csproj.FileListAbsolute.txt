@@ -1,0 +1,11 @@
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\bin\Debug\QuanLyLopHoc.exe.config
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\bin\Debug\QuanLyLopHoc.exe
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\bin\Debug\QuanLyLopHoc.pdb
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.csprojResolveAssemblyReference.cache
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.FrmDangNhap.resources
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.Properties.Resources.resources
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.csproj.GenerateResource.Cache
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.exe
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.pdb
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.GUI.FrmUngDungQuanLyLopHoc.resources
+C:\Users\Tieee\Desktop\PRJ_TranQuocThang08122023\QuanLyLopHoc\QuanLyLopHoc\obj\Debug\QuanLyLopHoc.FrmQuanLyLopHoc.resources
